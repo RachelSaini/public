@@ -79,8 +79,8 @@ except:
 
 aria2 = ariaAPI(
     ariaClient(
-        host="http://localhost",
-        port=8000,
+        host="http://0.0.0.0",
+        port=8090,
         secret="",
     )
 )
