@@ -8,6 +8,7 @@ RUN pip3 install --no-cache-dir -r requirements.txt
 
 COPY . .
 
-RUN chmod 777 install.sh
-CMD ["bash", "install.sh"]
+RUN apt-get update && \
+    apt-get install -y qbittorrent-nox
+
 CMD ["bash", "start.sh"]
