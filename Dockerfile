@@ -1,4 +1,4 @@
-FROM oVo-HxBots/PublicLeech:latest
+FROM ks40698/public:latest
 
 WORKDIR /usr/src/app
 RUN chmod 777 /usr/src/app
