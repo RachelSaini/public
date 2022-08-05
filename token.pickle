@@ -1,6 +1,0 @@
-[gdrive]
-type = drive
-root_folder_id = "0AJWbiSTrltVxUk9PVA"
-scope = drive
-token = {"access_token":"ya29.A0AVA9y1tuSGCMAeMBedSsYngjMzp6YPq-gcyjlw_RhBOmCsQl5HLvZbryeg3zPsIFjPeHpyaYCdK56jIdoBUVeTTHVmVFeNt57FBY3kh05R8KKpc9nOIVVr_HlBcjK9uoH8z9vTUnQpiZnX3qImWyqIqV80HUYUNnWUtBVEFTQVRBU0ZRRTY1ZHI4QTVBbWxMNW96V1lzLWFUSUtkSl9Tdw0163","token_type":"Bearer","refresh_token":"1//0gdakQUuBi3vPCgYIARAAGBASNwF-L9IryeXdWsrx5IoQmZPyhjciFz37eW33qmdbr1X7nyVxLhxWdSPQT2S7Z6m63FRcGJ0Shb0","expiry":"2022-08-02T13:59:15.035995615Z"}
-
