@@ -2,54 +2,54 @@ This is a Telegram Bot written in Python for mirroring files on the Internet to 
 
 # Features:
 
-## By [anasty17](https://github.com/anasty17)
-- qBittorrent.
-- Select files from Torrent before downloading using qbittorrent and aria2c.
-- Leech (splitting, thumbnail for each user, setting as document or as media for each user).
-- Stop duplicates for all tasks except yt-dlp tasks.
-- Zip/Unzip G-Drive links.
-- Counting files/folders from Google Drive link.
-- View Link button, extra button to open file index link in broswer instead of direct download.
-- Status Pages for unlimited tasks.
-- Clone status.
-- Search in multiple Drive folder/TeamDrive.
-- Recursive Search (only with `root` or TeamDrive ID, folder ids will be listed with non-recursive method).
-- Multi-TD list by token.pickle if exists.
-- Extract rar, zip and 7z splits with or without password.
-- Zip file/folder with or without password.
-- Use Token.pickle if file not found with Service Account for all Gdrive functions.
-- Random Service Account at startup.
-- Mirror/Leech/Watch/Clone/Count/Del by reply.
-- YT-DLP quality buttons.
-- Search on torrents with Torrent Search API or with variable plugins using qBittorrent search engine
-- Docker image support for linux `amd64, arm64/v8, arm/v7, s390x`.
-- Update bot at startup and with restart command using `UPSTREAM_REPO`.
-- Qbittorrent seed until reaching specific ratio or time.
-- Rss feed and filter. Based on this repository [rss-chan](https://github.com/hyPnOtICDo0g/rss-chan).
-- Save leech settings including thumbnails in database.
-- Mirror/Leech/Clone multi links/files with one command.
-- Extensions Filter for the files to be uploaded/cloned.
-- Incomplete task notifier to get incomplete task messages after restart, works with database.
-- Almost all repository functions have been improved.
-- Custom Name for all links except torrents. For files you should add extension except yt-dlp links.
-- Many bugs have been fixed.
+## By [@kirodewal](https://t.me/kirodewal)
+-[X] qBittorrent.
+-[X] Select files from Torrent before downloading using qbittorrent and aria2c.
+-[X] Leech (splitting, thumbnail for each user, setting as document or as media for each user).
+-[X] Stop duplicates for all tasks except yt-dlp tasks.
+-[X] Zip/Unzip G-Drive links.
+-[X] Counting files/folders from Google Drive link.
+-[X] View Link button, extra button to open file index link in broswer instead of direct download.
+-[X] Status Pages for unlimited tasks.
+-[X] Clone status.
+-[X] Search in multiple Drive folder/TeamDrive.
+-[X] Recursive Search (only with `root` or TeamDrive ID, folder ids will be listed with non-recursive method).
+-[X] Multi-TD list by token.pickle if exists.
+-[X] Extract rar, zip and 7z splits with or without password.
+-[X] Zip file/folder with or without password.
+-[X] Use Token.pickle if file not found with Service Account for all Gdrive functions.
+-[X] Random Service Account at startup.
+-[X] Mirror/Leech/Watch/Clone/Count/Del by reply.
+-[X] YT-DLP quality buttons.
+-[X] Search on torrents with Torrent Search API or with variable plugins using qBittorrent search engine
+-[X] Docker image support for linux `amd64, arm64/v8, arm/v7, s390x`.
+-[X] Update bot at startup and with restart command using `UPSTREAM_REPO`.
+-[X] Qbittorrent seed until reaching specific ratio or time.
+-[X] Rss feed and filter. Based on this repository [rss-chan](https://github.com/hyPnOtICDo0g/rss-chan).
+-[X] Save leech settings including thumbnails in database.
+-[X] Mirror/Leech/Clone multi links/files with one command.
+-[X] Extensions Filter for the files to be uploaded/cloned.
+-[X] Incomplete task notifier to get incomplete task messages after restart, works with database.
+-[X] Almost all repository functions have been improved.
+-[X] Custom Name for all links except torrents. For files you should add extension except yt-dlp links.
+-[X] Many bugs have been fixed.
 
 ## From Other Repositories
-- Mirror direct download links, Torrent, and Telegram files to Google Drive
-- Mirror Mega.nz links to Google Drive
-- Copy files from someone's Drive to your Drive (Using Autorclone)
-- Download/Upload progress, Speeds and ETAs
-- Mirror all yt-dlp supported links
-- Docker support
-- Uploading to Team Drive
-- Index Link support
-- Service Account support
-- Delete files from Drive
-- Multiple Trackers support
-- Shell and Executor
-- Add sudo users
-- Extract password protected files
-- Extract these filetypes and uploads to Google Drive
+-[X] Mirror direct download links, Torrent, and Telegram files to Google Drive
+-[X] Mirror Mega.nz links to Google Drive
+-[X] Copy files from someone's Drive to your Drive (Using Autorclone)
+-[X] Download/Upload progress, Speeds and ETAs
+-[X] Mirror all yt-dlp supported links
+-[X] Docker support
+-[X] Uploading to Team Drive
+-[X] Index Link support
+-[X] Service Account support
+-[X] Delete files from Drive
+-[X] Multiple Trackers support
+-[X] Shell and Executor
+-[X] Add sudo users
+-[X] Extract password protected files
+-[X] Extract these filetypes and uploads to Google Drive
   > ZIP, RAR, TAR, 7z, ISO, WIM, CAB, GZIP, BZIP2, APM, ARJ, CHM, CPIO, CramFS, DEB, DMG, FAT, HFS, LZH, LZMA, LZMA2, MBR, MSI, MSLZ, NSIS, NTFS, RPM, SquashFS, UDF, VHD, XAR, Z, TAR.XZ
 
 - Direct links Supported:
@@ -59,15 +59,14 @@ This is a Telegram Bot written in Python for mirroring files on the Internet to 
 
 ## Prerequisites
 
-- Tutorial Video from A to Z:
-  - Thanks to [Wiszky](https://github.com/vishnoe115)
- <p><a href="https://youtu.be/IUmq1paCiHI"> <img src="https://img.shields.io/badge/See%20Video-black?style=for-the-badge&logo=YouTube" width="160""/></a></p>
+- Deploy on Youtube
+  <p><a href="https://youtu.be/IUmq1paCiHI"> <img src="https://img.shields.io/badge/See%20Video-black?style=for-the-badge&logo=YouTube" width="160""/></a></p>
 
 ### 1. Installing requirements
 
 - Clone this repo:
 ```
-git clone https://github.com/anasty17/mirror-leech-telegram-bot mirrorbot/ && cd mirrorbot
+git clone https://github.com/oVo-HxBots/PublicLeech && cd PublicLeech
 ```
 - For Debian based distros
 ```
@@ -89,12 +88,9 @@ pip3 install -r requirements-cli.txt
 ### 2. Setting up config file
 
 ```
-cp config_sample.env config.env
+nano config.env
 ```
-- Remove the first line saying:
-```
-_____REMOVE_THIS_LINE_____=True
-```
+
 Fill up rest of the fields. Meaning of each field is discussed below:
 
 **1. Required Fields**
@@ -224,11 +220,11 @@ sudo dockerd
 ```
 - Build Docker image:
 ```
-sudo docker build . -t mirror-bot
+sudo docker build . -t publicleech
 ```
 - Run the image:
 ```
-sudo docker run -p 80:80 mirror-bot
+sudo docker run -p 80:80 publicleech
 ```
 - To stop the image:
 ```
@@ -242,7 +238,7 @@ sudo docker stop id
 
 ### Deploying on VPS Using docker-compose
 
-**NOTE**: If you want to use port other than 80, change it in [docker-compose.yml](https://github.com/anasty17/mirror-leech-telegram-bot/blob/master/docker-compose.yml) also.
+**NOTE**: If you want to use port other than 80, change it in [docker-compose.yml](https://github.com/oVo-HxBots/PublicLeech/blob/master/docker-compose.yml) also.
 
 ```
 sudo apt install docker-compose
@@ -269,7 +265,7 @@ sudo docker-compose start
 ------
 
 ## Deploying on Heroku
-<p><a href="https://github.com/anasty17/mirror-leech-telegram-bot/tree/heroku"> <img src="https://img.shields.io/badge/Deploy%20Guide-blueviolet?style=for-the-badge&logo=heroku" width="170""/></a></p>
+<p><a href="https://github.com/oVo-HxBots/PublicLeech/tree/heroku"> <img src="https://img.shields.io/badge/Deploy%20Guide-blueviolet?style=for-the-badge&logo=heroku" width="170""/></a></p>
 
 ------
 
